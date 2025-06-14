@@ -3,6 +3,14 @@ import { motion } from 'framer-motion';
 const projects = [
   {
     id: 1,
+    title: "Notelet",
+    description: "A real-time, no-login collaborative scratchpad for effortlessly writing, brainstorming, and sharing plain text with friends.",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/aws/aws-original.svg",
+    tags: ["AWS", "React", "Vite", "Lambda", "DynamoDB", "S3", "CloudFront"],
+    demo: "https://www.notelet.me/"
+  },
+  {
+    id: 2,
     title: "SQLite Playground",
     description: "A TypeScript-based playground for learning and experimenting with SQLite databases. Features an interactive interface for writing and executing SQL queries.",
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg",
@@ -11,14 +19,14 @@ const projects = [
     demo: "https://akshithd.github.io/SQLite-Playground/"
   },
   {
-    id: 2,
+    id: 3,
     title: "Learning Management Tool",
     description: "A full-stack web application for exam booking and user management. Built with Express.js, PostgreSQL, and JWT authentication, featuring a responsive TailwindCSS frontend and an MVC-structured backend for maintainability.",
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
     tags: ["Express.js", "PostgreSQL", "JWT", "TailwindCSS", "MVC"]
   },
   {
-    id: 3,
+    id: 4,
     title: "Stock Sensei",
     description: "A JavaScript application for tracking and analyzing stock market data. Provides real-time updates and visualization of stock trends.",
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
@@ -26,7 +34,7 @@ const projects = [
     link: "https://github.com/AkshithD/Stocks-App"
   },
   {
-    id: 4,
+    id: 5,
     title: "Android Cafe App",
     description: "A mobile cafe ordering application built using Java and Android Studio. Features menu selection, order customization, real-time order tracking, and order history management.",
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg",
@@ -35,7 +43,7 @@ const projects = [
     demo: "https://github.com/AkshithD/Android-Cafe-App#-demo"
   },
   {
-    id: 5,
+    id: 6,  
     title: "RU File System",
     description: "A custom file system implementation in C, featuring block management, file operations, and efficient data storage mechanisms.",
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
@@ -43,7 +51,7 @@ const projects = [
     link: "https://github.com/AkshithD/RU-file-system"
   },
   {
-    id: 6,
+    id: 7,
     title: "User-level Memory Management",
     description: "Implementation of user-level memory management system in C, demonstrating memory allocation, deallocation, and optimization techniques.",
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
@@ -51,7 +59,7 @@ const projects = [
     link: "https://github.com/AkshithD/User-level-Memory-Management"
   },
   {
-    id: 7,
+    id: 8,
     title: "Thread Library and Scheduler",
     description: "Custom thread library implementation with a scheduler in C, supporting thread creation, management, and synchronization primitives.",
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
@@ -59,7 +67,7 @@ const projects = [
     link: "https://github.com/AkshithD/Thread-Library-and-Scheduler"
   },
   {
-    id: 8,
+    id: 9,
     title: "Rutgers Eats",
     description: "A food delivery application for Rutgers University, connecting students with campus dining options and local restaurants.",
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
@@ -67,7 +75,7 @@ const projects = [
     link: "https://github.com/AkshithD/Rutgers-Eats"
   },
   {
-    id: 9,
+    id: 10,
     title: "Validate Courses",
     description: "A Java application that validates courses based on given prerequisites. Implemented using graph data structure for efficient course dependency management.",
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
@@ -75,7 +83,7 @@ const projects = [
     link: "https://github.com/AkshithD/Validate-Courses"
   },
   {
-    id: 10,
+    id: 11,
     title: "Huffman Coding",
     description: "Implementation of Huffman coding algorithm for file compression and decompression, using tree data structures for efficient encoding.",
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
@@ -83,7 +91,7 @@ const projects = [
     link: "https://github.com/AkshithD/Huffman-Coding"
   },
   {
-    id: 11,
+    id: 12,
     title: "Imagify",
     description: "Java application for image processing with various filters and operations, supporting multiple image formats and custom transformations.",
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
@@ -91,7 +99,7 @@ const projects = [
     link: "https://github.com/AkshithD/Imagify"
   },
   {
-    id: 12,
+    id: 13,
     title: "Calculator",
     description: "A feature-rich calculator application with support for basic arithmetic operations, scientific calculations, and a user-friendly interface.",
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
@@ -99,7 +107,7 @@ const projects = [
     link: "https://github.com/AkshithD/Calculator"
   },
   {
-    id: 13,
+    id: 14,
     title: "SketchPad",
     description: "An interactive drawing application allowing users to create and edit sketches with various tools and features.",
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
