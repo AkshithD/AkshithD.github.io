@@ -5,7 +5,7 @@ const projects = [
     id: 1,
     title: "Notelet",
     description: "A real-time, no-login collaborative scratchpad for effortlessly writing, brainstorming, and sharing plain text with friends.",
-    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/aws/aws-original.svg",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
     tags: ["AWS", "React", "Vite", "Lambda", "DynamoDB", "S3", "CloudFront"],
     demo: "https://www.notelet.me/"
   },
@@ -43,7 +43,7 @@ const projects = [
     demo: "https://github.com/AkshithD/Android-Cafe-App#-demo"
   },
   {
-    id: 6,  
+    id: 6,
     title: "RU File System",
     description: "A custom file system implementation in C, featuring block management, file operations, and efficient data storage mechanisms.",
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
@@ -103,7 +103,7 @@ const projects = [
     title: "Calculator",
     description: "A feature-rich calculator application with support for basic arithmetic operations, scientific calculations, and a user-friendly interface.",
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-    tags: ["HTML/CSS","JavaScript", "GUI", "Mathematics"],
+    tags: ["HTML/CSS", "JavaScript", "GUI", "Mathematics"],
     link: "https://github.com/AkshithD/Calculator"
   },
   {
@@ -111,23 +111,23 @@ const projects = [
     title: "SketchPad",
     description: "An interactive drawing application allowing users to create and edit sketches with various tools and features.",
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-    tags: ["HTML/CSS","JavaScript", "GUI", "Graphics"],
+    tags: ["HTML/CSS", "JavaScript", "GUI", "Graphics"],
     link: "https://github.com/AkshithD/SketchPad"
   }
 ];
 
 const ProjectCard = ({ project }) => {
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       className="bg-gray-700 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
     >
       <div className="h-48 bg-gray-600 flex items-center justify-center p-4">
-        <img 
-          src={project.image} 
-          alt={project.title} 
+        <img
+          src={project.image}
+          alt={project.title}
           className="h-24 w-24 object-contain"
         />
       </div>
@@ -136,8 +136,8 @@ const ProjectCard = ({ project }) => {
         <p className="text-gray-300 mb-4">{project.description}</p>
         <div className="flex flex-wrap gap-2 mb-4">
           {project.tags.map((tag) => (
-            <span 
-              key={tag} 
+            <span
+              key={tag}
               className="px-2 py-1 bg-gray-600 rounded-md text-xs"
             >
               {tag}
@@ -146,7 +146,7 @@ const ProjectCard = ({ project }) => {
         </div>
         <div className="flex gap-3">
           {project.link && (
-            <a 
+            <a
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
@@ -156,7 +156,7 @@ const ProjectCard = ({ project }) => {
             </a>
           )}
           {project.demo && (
-            <a 
+            <a
               href={project.demo}
               target="_blank"
               rel="noopener noreferrer"
@@ -182,7 +182,7 @@ const Projects = () => {
           ))}
         </div>
         <div className="text-center mt-12">
-          <a 
+          <a
             href="https://github.com/AkshithD"
             target="_blank"
             rel="noopener noreferrer"
